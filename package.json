@@ -1,0 +1,34 @@
+{
+  "name": "ts-decoratots",
+  "version": "1.0.0",
+  "description": "decorators in TS",
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "scripts": {
+    "build": "npm run compile && rimraf ./lib/examples",
+    "clean": "rimraf ./lib",
+    "compile": "tsc",
+    "start:dev": "ts-node ./src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swarnadeepsaha/ts-decoratots.git"
+  },
+  "author": "Swarnadeep Saha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swarnadeepsaha/ts-decoratots/issues"
+  },
+  "homepage": "https://github.com/swarnadeepsaha/ts-decoratots#readme",
+  "devDependencies": {
+    "@types/lodash.clonedeep": "^4.5.7",
+    "@types/node": "^18.16.3",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0"
+  }
+}
