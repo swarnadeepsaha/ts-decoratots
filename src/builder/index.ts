@@ -32,6 +32,9 @@ export function builder<T extends { new (...args: any[]): {} }>(constructor: T, 
     const instanceProperties: (string | symbol)[] = Reflect.ownKeys(new constructor());
     if (context.kind === "class") {
         return class extends constructor {
+            constructor(...args: any[]){
+                super(args);
+            }
             static builder(){
                 return new builderInternal(instanceProperties);
             }
