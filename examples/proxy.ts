@@ -18,7 +18,7 @@ const apiClientConfigurationObject = apiClientConfigurationBuilder
     .useHttps(true)
     .readTimeout(1000)
     .username('user')
-    .build();
+    .build()
 
 console.log(JSON.stringify(apiClientConfigurationObject)); // {"host":"localhost","port":8080,"useHttps":true,"readTimeout":1000,"username":"user"}
 
