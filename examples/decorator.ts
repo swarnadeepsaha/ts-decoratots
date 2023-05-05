@@ -1,4 +1,4 @@
-import { builder, Builder } from "../src/builder";
+import { builder, Builder } from "../src/builder/decorator";
 
 @builder
 class ApiClientConfiguration extends Builder{
