@@ -1,4 +1,4 @@
-import { Builder } from "../src/builder/proxy";
+import { Builder } from "../../src/builder/proxy";
 
 class ApiClientConfiguration extends Builder<ApiClientConfiguration>{
     host!: string;
